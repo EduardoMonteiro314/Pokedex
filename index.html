@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="caixa-superior">
+        <input type="text" class="identificador" id="pokemon" placeholder="Insira o id do pokémon">
+    </div>
+    <h1 id="nome">Nome</h1>
+    <div class="caixas">
+        <div class="caixa-info caixa1">
+            <p class="poderes poder1"></p>
+            <p class="poderes poder2"></p>
+
+        </div>
+        <div class="caixa-info caixa2"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    function init(){
+        let input = document.getElementById("pokemon")
+        input.addEventListener('input', pokemon)
+    }
+    init()
+</script>
